@@ -129,7 +129,7 @@ internal class MappingBuilder
             .Replace(azRegex.Replace(xRegex.Replace(braceRegex.Replace((string)resultItem.description, ""), ""), ""), " ")
             .ToLower()
             .Trim()
-            .TryGetAffixMapping()
+            .TryGetExplicitAffixMapping()
       }
       );
     }
